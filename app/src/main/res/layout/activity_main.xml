@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MEDICINE DATABASE"
+            android:textSize="34sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="437dp"
+        android:layout_height="104dp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="118dp"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:text="INSERT"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="164dp"
+            android:layout_height="88dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="126dp"
+            android:layout_height="93dp"
+            android:layout_weight="1"
+            android:text="FETCH"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="123dp">
+
+
+        <TextView
+            android:id="@+id/medtext"
+            android:layout_width="125dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Medicine Name"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/medicinename"
+            android:layout_width="282dp"
+            android:layout_height="106dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Medicine name"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="117dp">
+
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="278dp"
+            android:layout_height="112dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter date DD/MM/YYYY"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="424dp"
+        android:layout_height="153dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time of the day"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_weight="1"
+            android:entries="@array/timeoftheday" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT" />
+
+        <Button
+        android:id="@+id/fetch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FETCH" />
+
+
+</LinearLayout>
